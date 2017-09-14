@@ -1,0 +1,28 @@
+@import url("font-awesome.min.css");                                    /* Font Awesome Styles */
+@import url("font-awesome-ie7.min.css");                                /* Font Awesome Styles */
+@import url("glyphicons.css");                                          /* Glyphicons Font */
+@import url("halflings.css");                                           /* Glyphicons Halflings Font */
+
+ul.navbar-right a {
+    color: #040707;
+}
+
+ul#side-menu a {
+    color: #040707;
+}
+
+.center {
+    text-align: center;
+}
+
+button.btn-sm {
+    font-size: 7px;
+}
+
+.genero {
+	margin-bottom: 10px;
+}
+
+.formExerc {
+	margin-top: 20px;
+}
