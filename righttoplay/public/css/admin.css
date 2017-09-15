@@ -19,10 +19,10 @@ button.btn-sm {
     font-size: 7px;
 }
 
-.genero {
+.genero, .orientar {
 	margin-bottom: 10px;
 }
 
 .formExerc {
-	margin-top: 20px;
+	margin-top: 24px;
 }
