@@ -3,12 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Professor;
 
 class ProfessorController extends Controller
 {
-	public function index() {
-		return view('professor.index');
-	}
+    public function index(Request $request) {
+        if ($request->ajax()) {
+            $professores = Professor::all();
+            return response()->json($professores);
+        }
+        return view('professor.index');
+    }
 
 	public function create() {
 		return view('professor.create');
@@ -28,7 +33,9 @@ class ProfessorController extends Controller
             $professor['form_cott_periodo'] = $request->formacaoCottPeriodo;
             $professor['orientar'] = $request->orientar;
 
-            return response($professor);
+            if($professor->save()) {
+                return response(['msg'=>'inserted successfully']);
+            }
         }
     }
 }

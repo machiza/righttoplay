@@ -18,17 +18,17 @@
 	    					<table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
 	    						<thead>
 	    							<tr>
-	    								<th>id</th>
-	    								<th>Name</th>
-	    								<th>Genero</th>
-	    								<th>Anos como professor</th>
-	    								<th>Anos de actividades da RTP</th>
-	    								<th>Formacao</th>
-	    								<th>Formacao CoTT</th>
-	    								<th>Formador</th>
-	    								<th>Actions</th>
+										<th>id</th>
+										<th>Name</th>
+										<th>Genero</th>
+										<th>Anos como professor</th>
+										<th>Formacao</th>
+										<th>Actions</th>
 	    							</tr>
 	    						</thead>
+								<tbody id="dados">
+
+								</tbody>
 	    					</table>
 	    				</div>
 	    			</div>
@@ -37,5 +37,5 @@
 	@endsection
 
 	@section('scripts')
-    		{!! Html::script('js/professor/read.js') !!}
-    	@endsection
+		{!! Html::script('js/professor/read.js') !!}
+	@endsection
